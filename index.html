@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UrbanStore — Streetwear Premium</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #111 0%, #000 60%);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 80px;
+    }
+
+    header h1 {
+      font-weight: 900;
+      letter-spacing: 1px;
+    }
+
+    header nav a {
+      color: #aaa;
+      text-decoration: none;
+      margin-left: 25px;
+      font-weight: 500;
+    }
+
+    header nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      padding: 100px 80px;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .hero h2 {
+      font-size: 58px;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 25px;
+    }
+
+    .hero p {
+      color: #bbb;
+      font-size: 18px;
+      max-width: 520px;
+      margin-bottom: 40px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      padding: 15px 32px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      margin-right: 15px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #fff;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      opacity: 0.85;
+    }
+
+    .btn-secondary {
+      border: 1px solid #444;
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      border-color: #fff;
+    }
+
+    .mockup {
+      background: linear-gradient(145deg, #1a1a1a, #0b0b0b);
+      border-radius: 25px;
+      padding: 40px;
+      box-shadow: 0 0 60px rgba(255,255,255,0.05);
+    }
+
+    .mockup img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .brands {
+      text-align: center;
+      padding: 60px 80px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .features {
+      padding: 100px 80px;
+    }
+
+    .features h3 {
+      text-align: center;
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 60px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #111, #0a0a0a);
+      padding: 35px;
+      border-radius: 20px;
+      border: 1px solid #1f1f1f;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #333;
+    }
+
+    .card h4 {
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .card p {
+      color: #aaa;
+      font-size: 15px;
+    }
+
+    .cta {
+      text-align: center;
+      padding: 100px 80px;
+      background: radial-gradient(circle at center, #111, #000);
+    }
+
+    .cta h3 {
+      font-size: 46px;
+      font-weight: 900;
+      margin-bottom: 25px;
+    }
+
+    .cta p {
+      color: #bbb;
+      margin-bottom: 35px;
+    }
+
+    footer {
+      padding: 40px 80px;
+      border-top: 1px solid #111;
+      display: flex;
+      justify-content: space-between;
+      color: #666;
+      font-size: 14px;
+    }
+
+    @media(max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      header {
+        padding: 20px 30px;
+      }
+      .hero, .features, .cta {
+        padding: 70px 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>UrbanStore</h1>
+  <nav>
+    <a href="#">Inicio</a>
+    <a href="#">Productos</a>
+    <a href="#">Colecciones</a>
+    <a href="#">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Streetwear que define tu estilo</h2>
+    <p>
+      Ropa, tenis y accesorios premium diseñados para destacar.
+      Calidad, diseño y actitud urbana en un solo lugar.
+    </p>
+    <div class="buttons">
+      <a href="#" class="btn-primary">Comprar ahora</a>
+      <a href="#" class="btn-secondary">Ver colección</a>
+    </div>
+  </div>
+
+  <div class="mockup">
+    <img src="https://images.unsplash.com/photo-1521334884684-d80222895322" alt="Streetwear">
+  </div>
+</section>
+
+<section class="brands">
+  Inspirado en las mejores marcas de streetwear del mundo
+</section>
+
+<section class="features">
+  <h3>¿Qué encontrarás aquí?</h3>
+
+  <div class="grid">
+    <div class="card">
+      <h4>👕 Ropa Premium</h4>
+      <p>Camisetas, hoodies y outfits con diseño urbano moderno.</p>
+    </div>
+
+    <div class="card">
+      <h4>👟 Tenis Exclusivos</h4>
+      <p>Modelos seleccionados para elevar tu estilo diario.</p>
+    </div>
+
+    <div class="card">
+      <h4>🧢 Accesorios</h4>
+      <p>Cachuchas, gorras y detalles que hacen la diferencia.</p>
+    </div>
+
+    <div class="card">
+      <h4>🚀 Envíos Rápidos</h4>
+      <p>Recibe tus productos rápido y con total seguridad.</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <h3>Eleva tu estilo hoy</h3>
+  <p>No sigas tendencias. Créala.</p>
+  <a href="#" class="btn-primary">Explorar tienda</a>
+</section>
+
+<footer>
+  <div>© 2025 UrbanStore</div>
+  <div>Hecho para destacar</div>
+</footer>
+
+</body>
+</html>
